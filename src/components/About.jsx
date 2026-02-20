@@ -27,12 +27,14 @@ const About = () => {
         <div className="space-y-4 text-gray-400 text-lg leading-relaxed max-w-2xl">
           <p>
             Étudiant de 20 ans en deuxième année de BUT Métiers du Multimédia et de l'Internet à l'IUT de Blois. 
-            Je suis actuellement à la recherche d'un stage en développement web d'une durée de 15 semaines, 
+            Je suis actuellement à la recherche d'un stage en développement web d'une durée de 12 à 15 semaines, 
             du 16 mars au 26 juin 2026.
           </p>
-          <p className="text-base italic">
-            "Passionné par la création d'interfaces attractives et la mise en place de solutions back-end solides, 
-            mon expérience au Japon a renforcé mon autonomie et ma capacité d'adaptation en milieu professionnel international."
+          <p>
+            Passionné par la création d'interfaces attractives et la mise en place de solutions back-end solides. 
+          </p>
+          <p>
+            mon expérience au Japon a renforcé mon autonomie et ma capacité d'adaptation en milieu professionnel international.
           </p>
         </div>
 

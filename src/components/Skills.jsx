@@ -6,28 +6,37 @@ const Skills = () => {
       title: "Développement Front-end",
       skills: [
         { name: "React.js", level: "Maîtrisé", percentage: 85 },
-        { name: "JavaScript (ES6+)", level: "Avancé", percentage: 80 },
-        { name: "Tailwind CSS", level: "Intermédiaire", percentage: 70 },
-        { name: "Three.js", level: "Notions", percentage: 40 }
+        { name: "Vue.js", level: "Intermédiaire", percentage: 60 },
+        { name: "Three.js", level: "Notions", percentage: 45 },
+        { name: "A-Frame", level: "Intermédiaire", percentage: 55 },
+        { name: "JavaScript", level: "Avancé", percentage: 80 },
+        { name: "HTML5", level: "Expert", percentage: 95 },
+        { name: "CSS3", level: "Expert", percentage: 95 }
       ]
     },
     {
       title: "Architecture Back-end",
       skills: [
         { name: "Symfony 6", level: "Maîtrisé", percentage: 85 },
-        { name: "SQL / MySQL", level: "Maîtrisé", percentage: 85 },
+        { name: "Laravel", level: "Intermédiaire", percentage: 75 },
         { name: "PHP 8", level: "Avancé", percentage: 80 },
+        { name: "SQL / MySQL", level: "Maîtrisé", percentage: 85 },
         { name: "API Platform", level: "Intermédiaire", percentage: 75 }
       ]
     },
     {
       title: "Outils & Design",
       skills: [
+        { name: "Photoshop", level: "Notions", percentage: 40 },
+        { name: "Illustrator", level: "Notions", percentage: 40 },
+        { name: "Premiere Pro", level: "Notions", percentage: 40 },
+        { name: "Figma", level: "Avancé", percentage: 80 },
+        { name: "MindView", level: "Maîtrisé", percentage: 85 },
+        { name: "Trello", level: "Intermédiaire", percentage: 65 },
+        { name: "Tailwind CSS", level: "Intermédiaire", percentage: 70 },
+        { name: "Bootstrap", level: "Intermédiaire", percentage: 65 },
         { name: "Git / GitHub", level: "Intermédiaire", percentage: 75 },
-        { name: "Agile (Scrum)", level: "Intermédiaire", percentage: 75 },
-        { name: "Figma (UI/UX)", level: "Intermédiaire", percentage: 65 },
-        { name: "Excel", level: "Intermédiaire", percentage: 65 },
-        { name: "Docker", level: "Notions", percentage: 35 }
+        { name: "Excel", level: "Intermédiaire", percentage: 70 }
       ]
     }
   ];

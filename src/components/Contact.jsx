@@ -3,6 +3,8 @@ import FadeUp from '../Animations/FadeUp';
 const Contact = () => {
   const email = "alexandreguillemot.mmi@gmail.com";
   const phone = "07 86 35 18 08";
+  const linkedin = "https://www.linkedin.com/in/alexguillemot/";
+  const github = "https://github.com/GuillemotAlexandre"; // Remplace si besoin
 
   return (
     <section id="contact" className="py-20 border-t border-white/5">
@@ -16,22 +18,34 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Colonne Gauche : Infos directes */}
-            <div className="space-y-4">
-              <a href={`mailto:${email}`} className="block p-6 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
-                <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">✉️</div>
-                <h3 className="text-white font-bold mb-1">Email</h3>
-                <p className="text-gray-400 text-sm break-all">{email}</p>
+            {/* Colonne Gauche : Réseaux & Infos */}
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-4">
+              <a href={`mailto:${email}`} className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+                <div className="text-xl mb-1 group-hover:scale-110 transition-transform">✉️</div>
+                <h3 className="text-white font-bold text-sm">Email</h3>
+                <p className="text-gray-500 text-xs truncate">{email}</p>
               </a>
 
-              <a href={`tel:${phone.replace(/\s/g, '')}`} className="block p-6 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
-                <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">📞</div>
-                <h3 className="text-white font-bold mb-1">Téléphone</h3>
-                <p className="text-gray-400 text-sm">{phone}</p>
+              <a href={`tel:${phone.replace(/\s/g, '')}`} className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+                <div className="text-xl mb-1 group-hover:scale-110 transition-transform">📞</div>
+                <h3 className="text-white font-bold text-sm">Téléphone</h3>
+                <p className="text-gray-500 text-xs">{phone}</p>
+              </a>
+
+              <a href={linkedin} target="_blank" rel="noopener noreferrer" className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+                <div className="text-xl mb-1 group-hover:scale-110 transition-transform">🔗</div>
+                <h3 className="text-white font-bold text-sm">LinkedIn</h3>
+                <p className="text-gray-500 text-xs">Mon profil pro</p>
+              </a>
+
+              <a href={github} target="_blank" rel="noopener noreferrer" className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+                <div className="text-xl mb-1 group-hover:scale-110 transition-transform">💻</div>
+                <h3 className="text-white font-bold text-sm">GitHub</h3>
+                <p className="text-gray-500 text-xs">Mes projets</p>
               </a>
             </div>
 
-            {/* Colonne Droite : Formulaire Formspree */}
+            {/* Colonne Droite : Formulaire */}
             <div className="lg:col-span-2 p-8 bg-[#1a1a1a] rounded-2xl border border-white/5">
               <form action="https://formspree.io/f/meellryd" method="POST" className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
