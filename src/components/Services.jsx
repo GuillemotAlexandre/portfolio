@@ -1,28 +1,31 @@
+import { useTranslation } from 'react-i18next';
 import FadeUp from '../Animations/FadeUp';
 
 const Services = () => {
+  const { t } = useTranslation();
+
   const servicesData = [
     {
-      title: "Développement Fullstack",
-      description: "Conception d'applications web complètes et performantes. Je maîtrise l'ensemble de la chaîne de production, du Front-end dynamique au Back-end structuré.",
+      title: t('services.items.fullstack.title'),
+      description: t('services.items.fullstack.desc'),
       icon: "⚡",
       techs: "React • Vue.js • Symfony • Laravel • MySQL"
     },
     {
-      title: "Expériences Immersives & 3D Web",
-      description: "Création d'interfaces innovantes intégrant des éléments 3D interactifs via Three.js et A-Frame pour des expériences utilisateur uniques.",
+      title: t('services.items.immersive.title'),
+      description: t('services.items.immersive.desc'),
       icon: "🥽",
       techs: "Three.js • A-Frame • WebGL • WebVR"
     },
     {
-      title: "UI/UX Design & Prototypage",
-      description: "Conception d'interfaces centrées sur l'utilisateur. Réalisation de wireframes et de prototypes interactifs haute fidélité sur Figma.",
+      title: t('services.items.design.title'),
+      description: t('services.items.design.desc'),
       icon: "🎨",
       techs: "Figma • Design System • Prototypage"
     },
     {
-      title: "Gestion de Projet & Méthodes Agiles",
-      description: "Organisation et suivi rigoureux des cycles de développement via la méthode Scrum pour garantir le respect des objectifs.",
+      title: t('services.items.management.title'),
+      description: t('services.items.management.desc'),
       icon: "📊",
       techs: "Scrum • Trello • MindView • Git"
     }
@@ -33,9 +36,11 @@ const Services = () => {
       <FadeUp>
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 italic tracking-tight">
-            Mes Services
+            {t('services.title')}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400">Des solutions techniques et créatives adaptées à vos besoins numériques.</p>
+          <p className="text-gray-600 dark:text-gray-400">
+            {t('services.subtitle')}
+          </p>
         </div>
       </FadeUp>
 
@@ -47,7 +52,9 @@ const Services = () => {
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform inline-block">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{service.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-8">
                   {service.description}
                 </p>

@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "about": "À Propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "about": {
+    "name": "Alexandre Guillemot",
+    "job": "Développeur Web Fullstack",
+    "p1": "Actuellement en 3ème année de BUT MMI, spécialisé en Développement Web.",
+    "p2": "Je conçois des solutions numériques performantes en faisant le pont entre la rigueur technique et l'ergonomie créative.",
+    "p3": "Mon immersion de 3 mois au Japon a renforcé mon autonomie et ma capacité à évoluer dans des contextes internationaux complexes.",
+    "skills": {
+      "organized": "Organisé",
+      "agile": "Méthode Agile",
+      "punctual": "Ponctuel",
+      "adaptation": "Adaptabilité"
+    },
+    "cv_button": "Télécharger mon CV"
+  },
+  "services": {
+    "title": "Mes Services",
+    "subtitle": "Des solutions techniques et créatives adaptées à vos besoins numériques.",
+    "items": {
+      "fullstack": {
+        "title": "Développement Fullstack",
+        "desc": "Conception d'applications web complètes et performantes. Je maîtrise l'ensemble de la chaîne de production, du Front-end dynamique au Back-end structuré."
+      },
+      "immersive": {
+        "title": "Expériences Immersives & 3D Web",
+        "desc": "Création d'interfaces innovantes intégrant des éléments 3D interactifs via Three.js et A-Frame pour des expériences utilisateur uniques."
+      },
+      "design": {
+        "title": "UI/UX Design & Prototypage",
+        "desc": "Conception d'interfaces centrées sur l'utilisateur. Réalisation de wireframes et de prototypes interactifs haute fidélité sur Figma."
+      },
+      "management": {
+        "title": "Gestion de Projet & Méthodes Agiles",
+        "desc": "Organisation et suivi rigoureux des cycles de développement via la méthode Scrum pour garantir le respect des objectifs."
+      }
+    }
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "subtitle": "Mon arsenal technologique pour le développement web.",
+    "human_title": "Compétences Humaines",
+    "levels": {
+      "notions": "Notions",
+      "inter": "Intermédiaire",
+      "advanced": "Avancé",
+      "mastered": "Maîtrisé",
+      "expert": "Expert"
+    },
+    "categories": {
+      "front": "Développement Front-end",
+      "back": "Architecture Back-end",
+      "tools": "Outils & Design"
+    },
+    "soft": {
+      "rigor": { "title": "Rigueur & Organisation", "desc": "Gestion structurée des projets via Trello et MindView." },
+      "adapt": { "title": "Adaptabilité", "desc": "Capacité à monter rapidement en compétence sur de nouveaux environnements." },
+      "team": { "title": "Esprit d'équipe", "desc": "Collaborateur actif en mode Agile, favorisant la communication." },
+      "curiosity": { "title": "Curiosité Technique", "desc": "Veille constante sur l'innovation web et les nouvelles interactions." },
+      "proposal": { "title": "Force de proposition", "desc": "Capacité à suggérer des améliorations créatives et techniques." },
+      "empathy": { "title": "Empathie Utilisateur", "desc": "Approche centrée sur l'humain pour concevoir des interfaces intuitives." },
+      "solving": { "title": "Résolution de problèmes", "desc": "Approche méthodique et calme face aux défis techniques." },
+      "versatility": { "title": "Polyvalence", "desc": "Aisance à naviguer entre le design graphique et le développement." }
+    }
+  },
+  "formations": {
+    "section_title": "Parcours Académique",
+    "section_subtitle": "Une formation technique et créative tournée vers le numérique.",
+    "mmi": {
+      "degree": "BUT Métiers du Multimédia et de l'Internet (MMI)",
+      "specialty": "Parcours Développement Web & Dispositifs Interactifs",
+      "details": "Formation pluridisciplinaire structurée autour de 3 pôles majeurs :",
+      "pole1": "Développement : Programmation Fullstack (PHP/Laravel, JS/React/Vue), Web 3D (Three.js, A-Frame).",
+      "pole2": "Design : Conception d'interfaces (UI) et création graphique (Suite Adobe, Figma).",
+      "pole3": "Gestion & Com : Organisation de projet (MindView, Trello, Méthodes Agiles)."
+    },
+    "bac": {
+      "degree": "Baccalauréat STI2D",
+      "institution": "Lycée Claude de France, Romorantin-Lanthenay",
+      "specialty": "Systèmes d'Information et Numérique (SIN)",
+      "details": "Diplôme obtenu avec mention Assez Bien. Bases solides en algorithmique, réseaux et systèmes numériques."
+    }
+  },
+  "projects": {
+    "section_title": "Mes Réalisations",
+    "details_btn": "Détails du projet +",
+    "no_details": "Détails bientôt disponibles...",
+    "items": {
+      "sendai": {
+        "title": "Stage NIT Sendai (Japon)",
+        "category": "Neurosciences & International",
+        "desc": "Analyse physiologique de l'engagement cognitif en immersion.",
+        "fullDesc": "Développement d'une interface d'analyse d'ondes cérébrales (EEG) et biométrie. Ce stage au Japon m'a permis d'évoluer dans un contexte international, m'imposant de communiquer des données techniques complexes exclusivement en anglais.",
+        "soft": ["Collaboration internationale", "Autonomie", "Adaptabilité"]
+      },
+      "riders": {
+        "title": "Riders of Berk",
+        "category": "CMS de Data Storytelling",
+        "desc": "Plateforme web immersive de narration de données.",
+        "fullDesc": "Plateforme web immersive avec gestion multi-utilisateurs. Inclut un module d'import CSV, une sécurité JWT et un ORM Doctrine. Intégration de scènes 3D via Three.js.",
+        "soft": ["Architecture technique", "Rigueur"]
+      },
+      "tendance": {
+        "title": "Tendance or Not",
+        "category": "Projet Agile (Scrum)",
+        "desc": "Plateforme hybride style Tinder/Pinterest.",
+        "fullDesc": "Réalisation d'un site avec système de likes, commentaires et gestion de contenus populaires. Focus sur l'UX design et la gestion de projet via la méthodologie agile Scrum.",
+        "soft": ["Méthodologie Scrum", "Esprit d'équipe", "Ponctualité"]
+      }
+    }
+  },
+  "project_japon": {
+    "title": "Neurosciences & Engagement Cognitif",
+    "location": "NIT Sendai College • Japon",
+    "badge": "International",
+    "main_desc": "Stage de recherche de 3 mois visant à quantifier l'engagement des étudiants selon le format d'apprentissage (VR, Vidéo, Texte) via des données biométriques en temps réel.",
+    "eeg_title": "Interprétation EEG",
+    "eeg_desc": "Analyse des ondes Alpha (calme), Beta (concentration) et Gamma (engagement profond) pour évaluer la charge cognitive.",
+    "bio_title": "Analyse Biométrique & IA",
+    "bio_desc": "Corrélation entre variabilité du rythme cardiaque et stress. Utilisation de l'IA pour transformer les signaux bruts en cartographies exploitables.",
+    "date": "Avril — Juin 2025",
+    "btn_report": "Voir le rapport"
+  },
+  "project_riders": {
+    "subtitle": "Application Fullstack & Data Storytelling",
+    "context_p1": "Ce projet est une plateforme immersive dédiée à l'exploration et à l'analyse des données de l'univers \"Dragons\". L'enjeu principal était de transformer une base de données complexe en une interface narrative fluide.",
+    "context_p2": "Le site fonctionne comme un CMS dynamique : gestion CRUD, import CSV, et visualisations de statistiques interactives.",
+    "arch_title": "Architecture Découplée",
+    "arch_desc": "Mise en place d'une architecture moderne avec Symfony 6 et React.",
+    "data_title": "Gestion des Données",
+    "data_desc": "Conception de la base MySQL et agrégation de données statistiques.",
+    "auth_title": "Sécurité & Auth",
+    "auth_desc": "Gestion de l'authentification JWT pour l'accès sécurisé au back-office.",
+    "footer_info": "Projet Universitaire • 2025/2026"
+  },
+  "project_tendance": {
+    "subtitle": "Application Web de Sondages",
+    "context_p1": "\"Tendance or Not\" est une plateforme sociale interactive conçue pour permettre aux utilisateurs de créer, partager et voter sur des sondages d'actualité.",
+    "context_p2": "Le site repose sur un système de gestion de profils personnalisés et une interface de vote dynamique pour visualiser les tendances en temps réel.",
+    "mvc_title": "Architecture MVC",
+    "mvc_desc": "Développement en PHP natif respectant le pattern MVC pour une séparation nette de la logique métier.",
+    "data_title": "Gestion des Données",
+    "data_desc": "Modélisation d'une base SQL optimisée pour les relations utilisateurs et l'intégrité des votes.",
+    "logic_title": "Dynamisme & Logique",
+    "logic_desc": "Implémentation de scripts de calcul pour les résultats et l'affichage des sondages populaires.",
+    "footer_info": "Projet Universitaire • 2024",
+    "btn_test": "Tester l'application"
+  },
+  "hobbies": {
+    "title": "Loisirs & Passions",
+    "subtitle": "Ce qui nourrit ma curiosité et forge mon esprit d'analyse au-delà du code.",
+    "items": {
+      "volley": {
+        "title": "Volleyball",
+        "desc": "Pratiqué en club, ce sport m'a enseigné l'importance de la cohésion d'équipe, de la communication constante et de la réactivité sous pression."
+      },
+      "japan": {
+        "title": "Culture & Japon",
+        "desc": "Passionné par l'histoire et la culture japonaise. Mon immersion de 3 mois à Sendai a développé ma capacité d'adaptation et mon ouverture d'esprit."
+      },
+      "aviation": {
+        "title": "Ingénierie & Aviation",
+        "desc": "Fort intérêt pour l'ingénierie des véhicules et l'aviation militaire. J'aime analyser la complexité technique et l'évolution de ces systèmes."
+      },
+      "gaming": {
+        "title": "Jeux Vidéo",
+        "desc": "Passionné de jeux de stratégie et de simulation (War Thunder). Cela me permet d'explorer l'ingénierie et d'aiguiser mon sens tactique."
+      }
+    }
+  },
+  "contact": {
+    "title": "Parlons de votre projet !",
+    "subtitle": "Un projet ou une question ? N'hésitez pas à me contacter via le formulaire ou mes réseaux sociaux.",
+    "email_label": "Email",
+    "phone_label": "Téléphone",
+    "linkedin_label": "LinkedIn",
+    "linkedin_sub": "Profil Professionnel",
+    "github_label": "GitHub",
+    "github_sub": "Mes Dépôts de Code",
+    "form": {
+      "name": "Nom Complet",
+      "name_placeholder": "Votre Nom",
+      "email": "Adresse Email",
+      "email_placeholder": "exemple@mail.com",
+      "subject": "Objet",
+      "subject_placeholder": "Demande de projet",
+      "message": "Votre Message",
+      "message_placeholder": "Parlez-moi de votre projet...",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours..."
+    },
+    "success": "Message envoyé ! Je vous répondrai très prochainement.",
+    "error": "Oups ! Une erreur est survenue. Veuillez réessayer."
+  }
+}

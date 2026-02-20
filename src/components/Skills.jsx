@@ -1,55 +1,58 @@
+import { useTranslation } from 'react-i18next';
 import FadeUp from '../Animations/FadeUp';
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   const skillCategories = [
     {
-      title: "Développement Front-end",
+      title: t('skills.categories.front'),
       skills: [
-        { name: "React.js", level: "Maîtrisé", percentage: 85 },
-        { name: "Vue.js", level: "Intermédiaire", percentage: 60 },
-        { name: "Three.js", level: "Notions", percentage: 45 },
-        { name: "A-Frame", level: "Intermédiaire", percentage: 55 },
-        { name: "JavaScript", level: "Avancé", percentage: 80 },
-        { name: "HTML5", level: "Expert", percentage: 95 },
-        { name: "CSS3", level: "Expert", percentage: 95 }
+        { name: "React.js", level: t('skills.levels.mastered'), percentage: 85 },
+        { name: "Vue.js", level: t('skills.levels.inter'), percentage: 60 },
+        { name: "Three.js", level: t('skills.levels.notions'), percentage: 45 },
+        { name: "A-Frame", level: t('skills.levels.inter'), percentage: 55 },
+        { name: "JavaScript", level: t('skills.levels.advanced'), percentage: 80 },
+        { name: "HTML5", level: t('skills.levels.expert'), percentage: 95 },
+        { name: "CSS3", level: t('skills.levels.expert'), percentage: 95 }
       ]
     },
     {
-      title: "Architecture Back-end",
+      title: t('skills.categories.back'),
       skills: [
-        { name: "Symfony 6", level: "Maîtrisé", percentage: 85 },
-        { name: "Laravel", level: "Intermédiaire", percentage: 75 },
-        { name: "PHP 8", level: "Avancé", percentage: 80 },
-        { name: "SQL / MySQL", level: "Maîtrisé", percentage: 85 },
-        { name: "API Platform", level: "Intermédiaire", percentage: 75 }
+        { name: "Symfony 6", level: t('skills.levels.mastered'), percentage: 85 },
+        { name: "Laravel", level: t('skills.levels.inter'), percentage: 75 },
+        { name: "PHP 8", level: t('skills.levels.advanced'), percentage: 80 },
+        { name: "SQL / MySQL", level: t('skills.levels.mastered'), percentage: 85 },
+        { name: "API Platform", level: t('skills.levels.inter'), percentage: 75 }
       ]
     },
     {
-      title: "Outils & Design",
+      title: t('skills.categories.tools'),
       skills: [
-        { name: "Photoshop", level: "Notions", percentage: 40 },
-        { name: "Illustrator", level: "Notions", percentage: 40 },
-        { name: "Premiere Pro", level: "Notions", percentage: 40 },
-        { name: "Figma", level: "Avancé", percentage: 80 },
-        { name: "MindView", level: "Maîtrisé", percentage: 85 },
-        { name: "Trello", level: "Intermédiaire", percentage: 65 },
-        { name: "Tailwind CSS", level: "Intermédiaire", percentage: 70 },
-        { name: "Bootstrap", level: "Intermédiaire", percentage: 65 },
-        { name: "Git / GitHub", level: "Intermédiaire", percentage: 75 },
-        { name: "Excel", level: "Intermédiaire", percentage: 70 }
+        { name: "Photoshop", level: t('skills.levels.notions'), percentage: 40 },
+        { name: "Illustrator", level: t('skills.levels.notions'), percentage: 40 },
+        { name: "Premiere Pro", level: t('skills.levels.notions'), percentage: 40 },
+        { name: "Figma", level: t('skills.levels.advanced'), percentage: 80 },
+        { name: "MindView", level: t('skills.levels.mastered'), percentage: 85 },
+        { name: "Trello", level: t('skills.levels.inter'), percentage: 65 },
+        { name: "Tailwind CSS", level: t('skills.levels.inter'), percentage: 70 },
+        { name: "Bootstrap", level: t('skills.levels.inter'), percentage: 65 },
+        { name: "Git / GitHub", level: t('skills.levels.inter'), percentage: 75 },
+        { name: "Excel", level: t('skills.levels.inter'), percentage: 70 }
       ]
     }
   ];
 
   const softSkills = [
-    { title: "Rigueur & Organisation", desc: "Gestion structurée des projets via Trello et MindView.", icon: "📅" },
-    { title: "Adaptabilité", desc: "Capacité à monter rapidement en compétence sur de nouveaux environnements.", icon: "🔄" },
-    { title: "Esprit d'équipe", desc: "Collaborateur actif en mode Agile, favorisant la communication.", icon: "🤝" },
-    { title: "Curiosité Technique", desc: "Veille constante sur l'innovation web et les nouvelles interactions.", icon: "🧠" },
-    { title: "Force de proposition", desc: "Capacité à suggérer des améliorations créatives et techniques.", icon: "💡" },
-    { title: "Empathie Utilisateur", desc: "Approche centrée sur l'humain pour concevoir des interfaces intuitives.", icon: "👤" },
-    { title: "Résolution de problèmes", desc: "Approche méthodique et calme face aux défis techniques.", icon: "🛠️" },
-    { title: "Polyvalence", desc: "Aisance à naviguer entre le design graphique et le développement.", icon: "🔧" }
+    { title: t('skills.soft.rigor.title'), desc: t('skills.soft.rigor.desc'), icon: "📅" },
+    { title: t('skills.soft.adapt.title'), desc: t('skills.soft.adapt.desc'), icon: "🔄" },
+    { title: t('skills.soft.team.title'), desc: t('skills.soft.team.desc'), icon: "🤝" },
+    { title: t('skills.soft.curiosity.title'), desc: t('skills.soft.curiosity.desc'), icon: "🧠" },
+    { title: t('skills.soft.proposal.title'), desc: t('skills.soft.proposal.desc'), icon: "💡" },
+    { title: t('skills.soft.empathy.title'), desc: t('skills.soft.empathy.desc'), icon: "👤" },
+    { title: t('skills.soft.solving.title'), desc: t('skills.soft.solving.desc'), icon: "🛠️" },
+    { title: t('skills.soft.versatility.title'), desc: t('skills.soft.versatility.desc'), icon: "🔧" }
   ];
 
   return (
@@ -57,13 +60,12 @@ const Skills = () => {
       <FadeUp>
         <div className="mb-12 text-center md:text-left">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 italic tracking-tight">
-            Compétences Techniques
+            {t('skills.title')}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400">Mon arsenal technologique pour le développement web.</p>
+          <p className="text-gray-600 dark:text-gray-400">{t('skills.subtitle')}</p>
         </div>
       </FadeUp>
 
-      {/* Grille des compétences techniques */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {skillCategories.map((category, index) => (
           <FadeUp key={index} delay={index * 100}>
@@ -72,7 +74,6 @@ const Skills = () => {
                 <span className="w-2 h-2 bg-brand rounded-full"></span>
                 {category.title}
               </h3>
-              
               <div className="space-y-6">
                 {category.skills.map((skill, i) => (
                   <div key={i} className="space-y-2">
@@ -82,7 +83,6 @@ const Skills = () => {
                         {skill.level}
                       </span>
                     </div>
-                    
                     <div className="h-1.5 w-full bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden">
                       <div 
                         className="h-full bg-brand rounded-full transition-all duration-1000 ease-out"
@@ -97,11 +97,10 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* Section Soft Skills */}
       <FadeUp delay={400}>
         <div className="mt-20">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-10 text-center italic tracking-wide">
-            Compétences Humaines
+            {t('skills.human_title')}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {softSkills.map((skill, i) => (

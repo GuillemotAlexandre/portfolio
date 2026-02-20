@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import ProjectCard from '../../Animations/ProjectCard';
 import { ExternalLink, Brain, Activity, Globe } from 'lucide-react';
 
 const NeurosciencesJapon = ({ index }) => {
+  const { t } = useTranslation();
+
   return (
     <ProjectCard delay={index * 200}>
       <article className="group bg-white dark:bg-[#1a1a1a] p-8 rounded-3xl border border-gray-200 dark:border-white/5 hover:border-brand/40 transition-all duration-500 h-full flex flex-col shadow-sm dark:shadow-none">
@@ -10,14 +13,14 @@ const NeurosciencesJapon = ({ index }) => {
         <div className="flex justify-between items-start mb-6">
           <div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors italic">
-              Neurosciences & Engagement Cognitif
+              {t('project_japon.title')}
             </h3>
-            <p className="text-brand font-medium text-sm">NIT Sendai College • Japon</p>
+            <p className="text-brand font-medium text-sm">{t('project_japon.location')}</p>
           </div>
           <div className="flex items-center gap-2">
             <Globe className="text-red-500/50" size={24} />
             <span className="text-[10px] text-red-500/70 font-bold uppercase tracking-widest border-l border-red-500/20 pl-2">
-              International
+              {t('project_japon.badge')}
             </span>
           </div>
         </div>
@@ -25,16 +28,18 @@ const NeurosciencesJapon = ({ index }) => {
         {/* Corps du projet */}
         <div className="text-gray-600 dark:text-gray-400 mb-8 space-y-6 flex-grow transition-colors">
           <p className="text-sm leading-relaxed">
-            Stage de recherche de 3 mois visant à quantifier l'engagement des étudiants selon le format d'apprentissage (VR, Vidéo, Texte) via des données biométriques en temps réel.
+            {t('project_japon.main_desc')}
           </p>
 
           <div className="space-y-4">
             <div className="flex gap-4 p-4 bg-gray-50 dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/5 group-hover:border-brand/10 transition-colors">
               <Brain className="text-brand shrink-0" size={20} />
               <div>
-                <h4 className="text-gray-900 dark:text-white text-xs font-bold uppercase tracking-wider mb-1">Interprétation EEG</h4>
+                <h4 className="text-gray-900 dark:text-white text-xs font-bold uppercase tracking-wider mb-1">
+                  {t('project_japon.eeg_title')}
+                </h4>
                 <p className="text-xs">
-                  Analyse des ondes <strong>Alpha</strong> (calme), <strong>Beta</strong> (concentration) et <strong>Gamma</strong> (engagement profond) pour évaluer la charge cognitive.
+                  {t('project_japon.eeg_desc')}
                 </p>
               </div>
             </div>
@@ -42,9 +47,11 @@ const NeurosciencesJapon = ({ index }) => {
             <div className="flex gap-4 p-4 bg-gray-50 dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/5 group-hover:border-brand/10 transition-colors">
               <Activity className="text-brand shrink-0" size={20} />
               <div>
-                <h4 className="text-gray-900 dark:text-white text-xs font-bold uppercase tracking-wider mb-1">Analyse Biométrique & IA</h4>
+                <h4 className="text-gray-900 dark:text-white text-xs font-bold uppercase tracking-wider mb-1">
+                   {t('project_japon.bio_title')}
+                </h4>
                 <p className="text-xs">
-                  Corrélation entre variabilité du rythme cardiaque et stress. Utilisation de l'IA pour transformer les signaux bruts en cartographies exploitables.
+                  {t('project_japon.bio_desc')}
                 </p>
               </div>
             </div>
@@ -62,7 +69,9 @@ const NeurosciencesJapon = ({ index }) => {
 
         {/* Footer */}
         <div className="flex justify-between items-center pt-6 border-t border-gray-100 dark:border-white/5">
-          <span className="text-[10px] text-gray-500 dark:text-gray-600 font-mono italic uppercase">Avril — Juin 2025</span>
+          <span className="text-[10px] text-gray-500 dark:text-gray-600 font-mono italic uppercase">
+            {t('project_japon.date')}
+          </span>
           
           <a 
             href="https://www.canva.com/design/DAGrhyu0VfI/YHoO-cQko_0VBSsAyuIyKA/view" 
@@ -70,7 +79,7 @@ const NeurosciencesJapon = ({ index }) => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-xs font-bold text-white bg-gray-900 dark:bg-brand/20 hover:bg-brand px-4 py-2 rounded-full transition-all group/link shadow-md dark:shadow-none"
           >
-            Voir le rapport
+            {t('project_japon.btn_report')}
             <ExternalLink size={14} className="group-hover/link:translate-x-0.5 transition-transform" />
           </a>
         </div>

@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "name": "Alexandre Guillemot",
+    "job": "Fullstack Web Developer",
+    "p1": "Currently in my 3rd year of a BUT MMI degree, specializing in Web Development.",
+    "p2": "I design high-performance digital solutions by bridging technical rigor with creative ergonomics.",
+    "p3": "My 3-month immersion in Japan strengthened my autonomy and my ability to thrive in complex international environments.",
+    "skills": {
+      "organized": "Organized",
+      "agile": "Agile Method",
+      "punctual": "Punctual",
+      "adaptation": "Adaptability"
+    },
+    "cv_button": "Download CV"
+  },
+  "services": {
+    "title": "My Services",
+    "subtitle": "Technical and creative solutions tailored to your digital needs.",
+    "items": {
+      "fullstack": {
+        "title": "Fullstack Development",
+        "desc": "Designing complete, high-performance web applications. I manage the entire production chain, from dynamic Front-end to structured Back-end."
+      },
+      "immersive": {
+        "title": "Immersive Experiences & Web 3D",
+        "desc": "Creating innovative interfaces by integrating interactive 3D elements via Three.js and A-Frame for unique user experiences."
+      },
+      "design": {
+        "title": "UI/UX Design & Prototyping",
+        "desc": "User-centric interface design. Developing wireframes and high-fidelity interactive prototypes on Figma."
+      },
+      "management": {
+        "title": "Project Management & Agile Methods",
+        "desc": "Rigorous organization and monitoring of development cycles using the Scrum method to ensure objectives are met."
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "My technological arsenal for web development.",
+    "human_title": "Soft Skills",
+    "levels": {
+      "notions": "Basics",
+      "inter": "Intermediate",
+      "advanced": "Advanced",
+      "mastered": "Mastered",
+      "expert": "Expert"
+    },
+    "categories": {
+      "front": "Front-end Development",
+      "back": "Back-end Architecture",
+      "tools": "Tools & Design"
+    },
+    "soft": {
+      "rigor": { "title": "Rigor & Organization", "desc": "Structured project management via Trello and MindView." },
+      "adapt": { "title": "Adaptability", "desc": "Ability to quickly gain proficiency in new environments." },
+      "team": { "title": "Team Spirit", "desc": "Active collaborator in Agile mode, promoting communication." },
+      "curiosity": { "title": "Technical Curiosity", "desc": "Constant monitoring of web innovation and new interactions." },
+      "proposal": { "title": "Proactive Approach", "desc": "Ability to suggest creative and technical improvements." },
+      "empathy": { "title": "User Empathy", "desc": "Human-centered approach to designing intuitive interfaces." },
+      "solving": { "title": "Problem Solving", "desc": "Methodical and calm approach to technical challenges." },
+      "versatility": { "title": "Versatility", "desc": "Ease in navigating between graphic design and development." }
+    }
+  },
+  "formations": {
+    "section_title": "Academic Background",
+    "section_subtitle": "Technical and creative training focused on digital technology.",
+    "mmi": {
+      "degree": "Bachelor of Technology in Multimedia and the Internet (MMI)",
+      "specialty": "Web Development & Interactive Devices Path",
+      "details": "Multidisciplinary training structured around 3 major poles:",
+      "pole1": "Development: Fullstack Programming (PHP/Laravel, JS/React/Vue), Web 3D (Three.js, A-Frame).",
+      "pole2": "Design: Interface Design (UI) and graphic creation (Adobe Suite, Figma).",
+      "pole3": "Management & Com: Project organization (MindView, Trello, Agile Methods)."
+    },
+    "bac": {
+      "degree": "STI2D Baccalaureate",
+      "institution": "Claude de France High School, Romorantin-Lanthenay",
+      "specialty": "Information Systems and Digital Technology (SIN)",
+      "details": "Diploma obtained with honors (Mention Assez Bien). Solid foundation in algorithms, networks, and digital systems."
+    }
+  },
+  "projects": {
+    "section_title": "My Work",
+    "details_btn": "Project Details +",
+    "no_details": "Details coming soon...",
+    "items": {
+      "sendai": {
+        "title": "NIT Sendai Internship (Japan)",
+        "category": "Neuroscience & International",
+        "desc": "Physiological analysis of cognitive engagement in immersion.",
+        "fullDesc": "Development of a brainwave (EEG) and biometrics analysis interface. This internship in Japan allowed me to grow in an international context, requiring me to communicate complex technical data exclusively in English.",
+        "soft": ["International collaboration", "Autonomy", "Adaptability"]
+      },
+      "riders": {
+        "title": "Riders of Berk",
+        "category": "Data Storytelling CMS",
+        "desc": "Immersive web platform for data narration.",
+        "fullDesc": "Immersive web platform with multi-user management. Includes a CSV import module, JWT security, and Doctrine ORM. 3D scenes integration via Three.js.",
+        "soft": ["Technical architecture", "Rigor"]
+      },
+      "tendance": {
+        "title": "Tendance or Not",
+        "category": "Agile Project (Scrum)",
+        "desc": "Hybrid platform (Tinder/Pinterest style).",
+        "fullDesc": "Creation of a site with a like system, comments, and popular content management. Focus on UX design and project management via Scrum agile methodology.",
+        "soft": ["Scrum Methodology", "Team Spirit", "Punctuality"]
+      }
+    }
+  },
+  "project_japon": {
+    "title": "Neuroscience & Cognitive Engagement",
+    "location": "NIT Sendai College • Japan",
+    "badge": "International",
+    "main_desc": "3-month research internship aiming to quantify student engagement based on learning format (VR, Video, Text) via real-time biometric data.",
+    "eeg_title": "EEG Interpretation",
+    "eeg_desc": "Analysis of Alpha (calm), Beta (concentration), and Gamma (deep engagement) waves to assess cognitive load.",
+    "bio_title": "Biometric Analysis & IA",
+    "bio_desc": "Correlation between heart rate variability and stress. Using AI to transform raw signals into actionable mappings.",
+    "date": "April — June 2025",
+    "btn_report": "View Report"
+  },
+  "project_riders": {
+    "subtitle": "Fullstack Application & Data Storytelling",
+    "context_p1": "This project is an immersive platform dedicated to exploring and analyzing data from the \"How to Train Your Dragon\" universe. The main challenge was to transform a complex database into a smooth narrative interface.",
+    "context_p2": "The site operates as a dynamic CMS: CRUD management, CSV import, and interactive statistical visualizations.",
+    "arch_title": "Decoupled Architecture",
+    "arch_desc": "Implementation of a modern architecture using Symfony 6 and React.",
+    "data_title": "Data Management",
+    "data_desc": "MySQL database design and statistical data aggregation.",
+    "auth_title": "Security & Auth",
+    "auth_desc": "JWT authentication management for secure back-office access.",
+    "footer_info": "University Project • 2025/2026"
+  },
+  "project_tendance": {
+    "subtitle": "Web Polling Application",
+    "context_p1": "\"Tendance or Not\" is an interactive social platform designed to allow users to create, share, and vote on trending polls.",
+    "context_p2": "The site features a personalized profile management system and a dynamic voting interface to visualize trends in real-time.",
+    "mvc_title": "MVC Architecture",
+    "mvc_desc": "Native PHP development following the MVC pattern for a clear separation of business logic.",
+    "data_title": "Data Management",
+    "data_desc": "SQL database modeling optimized for user relationships and vote integrity.",
+    "logic_title": "Dynamics & Logic",
+    "logic_desc": "Implementation of calculation scripts for results and popular poll displays.",
+    "footer_info": "University Project • 2024",
+    "btn_test": "Test the App"
+  },
+  "hobbies": {
+    "title": "Hobbies & Passions",
+    "subtitle": "What feeds my curiosity and shapes my analytical mind outside of web development.",
+    "items": {
+      "volley": {
+        "title": "Volleyball",
+        "desc": "Practiced in a club, this sport taught me the importance of team cohesion, constant communication, and reactivity under pressure."
+      },
+      "japan": {
+        "title": "Culture & Japan",
+        "desc": "Passionate about Japanese history and culture. My 3-month immersion in Sendai developed my adaptability and open-mindedness."
+      },
+      "aviation": {
+        "title": "Engineering & Aviation",
+        "desc": "Strong interest in vehicle engineering and military aviation. I enjoy analyzing technical complexity and the evolution of these systems."
+      },
+      "gaming": {
+        "title": "Video Games",
+        "desc": "Passionate about strategy and simulation games (War Thunder). This allows me to explore engineering and sharpen my tactical sense."
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Talk!",
+    "subtitle": "Have a question or a project? Feel free to reach out via the form or my social networks.",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "linkedin_label": "LinkedIn",
+    "linkedin_sub": "Professional Profile",
+    "github_label": "GitHub",
+    "github_sub": "My Code Repositories",
+    "form": {
+      "name": "Full Name",
+      "name_placeholder": "Your Name",
+      "email": "Email Address",
+      "email_placeholder": "example@mail.com",
+      "subject": "Subject",
+      "subject_placeholder": "Project inquiry",
+      "message": "Your Message",
+      "message_placeholder": "Tell me about your project...",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "success": "Message sent! I'll get back to you very soon.",
+    "error": "Oops! An error occurred. Please try again."
+  }
+}

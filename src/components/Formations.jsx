@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import FadeUp from '../Animations/FadeUp';
 import { 
   SiReact, SiPhp, SiSymfony, SiJavascript, SiMysql, SiFigma, 
@@ -9,17 +10,19 @@ import { RiFileExcel2Fill, RiMindMap } from 'react-icons/ri';
 import { TbCube } from 'react-icons/tb'; 
 
 const Formations = () => {
+  const { t } = useTranslation();
+
   const formationData = [
     {
       year: "2023 - 2026",
-      degree: "BUT Métiers du Multimédia et de l'Internet (MMI)",
+      degree: t('formations.mmi.degree'),
       institution: "IUT de Blois, Université de Tours",
-      specialty: "Parcours Développement Web et Dispositifs Interactifs",
-      details: "Formation pluridisciplinaire structurée autour de 3 pôles majeurs :",
+      specialty: t('formations.mmi.specialty'),
+      details: t('formations.mmi.details'),
       poles: [
-        "Développement : Programmation Fullstack (PHP/Laravel, JS/React/Vue), 3D Web (Three.js, A-Frame).",
-        "Design : Conception d'interfaces (UI) et création graphique (Suite Adobe, Figma).",
-        "Gestion & Com : Organisation de projet (MindView, Trello, Méthodes Agiles)."
+        t('formations.mmi.pole1'),
+        t('formations.mmi.pole2'),
+        t('formations.mmi.pole3')
       ],
       technos: [
         { icon: <DiHtml5 className="text-orange-500" />, name: "HTML5" },
@@ -27,12 +30,10 @@ const Formations = () => {
         { icon: <SiJavascript className="text-yellow-400" />, name: "JS" },
         { icon: <SiReact className="text-blue-400" />, name: "React" },
         { icon: <SiVuedotjs className="text-green-500" />, name: "Vue.js" },
-        /* Changement dynamique pour Three.js (noir en clair, blanc en sombre) */
         { icon: <SiThreedotjs className="text-gray-900 dark:text-white" />, name: "Three.js" },
         { icon: <TbCube className="text-pink-400" />, name: "A-Frame" },
         { icon: <SiPhp className="text-indigo-400" />, name: "PHP" },
         { icon: <SiLaravel className="text-red-500" />, name: "Laravel" },
-        /* Changement dynamique pour Symfony */
         { icon: <SiSymfony className="text-gray-900 dark:text-white" />, name: "Symfony" },
         { icon: <SiTailwindcss className="text-cyan-400" />, name: "Tailwind" },
         { icon: <SiBootstrap className="text-purple-500" />, name: "Bootstrap" },
@@ -48,10 +49,10 @@ const Formations = () => {
     },
     {
       year: "2020 - 2023",
-      degree: "Baccalauréat STI2D",
-      institution: "Lycée Claude de France, Romorantin-Lanthenay",
-      specialty: "Systèmes d'Information et Numérique (SIN)",
-      details: "Diplôme obtenu avec Mention Assez Bien. Bases solides en algorithmique, réseaux et systèmes numériques."
+      degree: t('formations.bac.degree'),
+      institution: t('formations.bac.institution'),
+      specialty: t('formations.bac.specialty'),
+      details: t('formations.bac.details')
     }
   ];
 
@@ -60,9 +61,9 @@ const Formations = () => {
       <FadeUp>
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 italic tracking-tight">
-            Mon Parcours Académique
+            {t('formations.section_title')}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400">Une formation technique et créative axée sur le numérique.</p>
+          <p className="text-gray-600 dark:text-gray-400">{t('formations.section_subtitle')}</p>
         </div>
       </FadeUp>
 
