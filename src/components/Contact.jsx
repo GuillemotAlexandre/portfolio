@@ -4,15 +4,15 @@ const Contact = () => {
   const email = "alexandreguillemot.mmi@gmail.com";
   const phone = "07 86 35 18 08";
   const linkedin = "https://www.linkedin.com/in/alexguillemot/";
-  const github = "https://github.com/GuillemotAlexandre"; // Remplace si besoin
+  const github = "https://github.com/GuillemotAlexandre";
 
   return (
-    <section id="contact" className="py-20 border-t border-white/5">
+    <section id="contact" className="py-20 border-t border-gray-200 dark:border-white/5 transition-colors duration-500">
       <FadeUp>
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4 italic">Me contacter</h2>
-            <p className="text-gray-400">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 italic transition-colors">Me contacter</h2>
+            <p className="text-gray-600 dark:text-gray-400 transition-colors">
               Recherche d'un contrat de stage du 16 mars au 26 juin.
             </p>
           </div>
@@ -20,74 +20,74 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Colonne Gauche : Réseaux & Infos */}
             <div className="grid grid-cols-2 lg:grid-cols-1 gap-4">
-              <a href={`mailto:${email}`} className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+              <a href={`mailto:${email}`} className="p-4 bg-white dark:bg-[#1a1a1a] rounded-2xl border border-gray-200 dark:border-white/5 hover:border-brand transition-all group shadow-sm dark:shadow-none">
                 <div className="text-xl mb-1 group-hover:scale-110 transition-transform">✉️</div>
-                <h3 className="text-white font-bold text-sm">Email</h3>
+                <h3 className="text-gray-900 dark:text-white font-bold text-sm transition-colors">Email</h3>
                 <p className="text-gray-500 text-xs truncate">{email}</p>
               </a>
 
-              <a href={`tel:${phone.replace(/\s/g, '')}`} className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+              <a href={`tel:${phone.replace(/\s/g, '')}`} className="p-4 bg-white dark:bg-[#1a1a1a] rounded-2xl border border-gray-200 dark:border-white/5 hover:border-brand transition-all group shadow-sm dark:shadow-none">
                 <div className="text-xl mb-1 group-hover:scale-110 transition-transform">📞</div>
-                <h3 className="text-white font-bold text-sm">Téléphone</h3>
+                <h3 className="text-gray-900 dark:text-white font-bold text-sm transition-colors">Téléphone</h3>
                 <p className="text-gray-500 text-xs">{phone}</p>
               </a>
 
-              <a href={linkedin} target="_blank" rel="noopener noreferrer" className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+              <a href={linkedin} target="_blank" rel="noopener noreferrer" className="p-4 bg-white dark:bg-[#1a1a1a] rounded-2xl border border-gray-200 dark:border-white/5 hover:border-brand transition-all group shadow-sm dark:shadow-none">
                 <div className="text-xl mb-1 group-hover:scale-110 transition-transform">🔗</div>
-                <h3 className="text-white font-bold text-sm">LinkedIn</h3>
+                <h3 className="text-gray-900 dark:text-white font-bold text-sm transition-colors">LinkedIn</h3>
                 <p className="text-gray-500 text-xs">Mon profil pro</p>
               </a>
 
-              <a href={github} target="_blank" rel="noopener noreferrer" className="p-4 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-brand transition-all group">
+              <a href={github} target="_blank" rel="noopener noreferrer" className="p-4 bg-white dark:bg-[#1a1a1a] rounded-2xl border border-gray-200 dark:border-white/5 hover:border-brand transition-all group shadow-sm dark:shadow-none">
                 <div className="text-xl mb-1 group-hover:scale-110 transition-transform">💻</div>
-                <h3 className="text-white font-bold text-sm">GitHub</h3>
+                <h3 className="text-gray-900 dark:text-white font-bold text-sm transition-colors">GitHub</h3>
                 <p className="text-gray-500 text-xs">Mes projets</p>
               </a>
             </div>
 
             {/* Colonne Droite : Formulaire */}
-            <div className="lg:col-span-2 p-8 bg-[#1a1a1a] rounded-2xl border border-white/5">
+            <div className="lg:col-span-2 p-8 bg-white dark:bg-[#1a1a1a] rounded-2xl border border-gray-200 dark:border-white/5 shadow-sm dark:shadow-none transition-colors">
               <form action="https://formspree.io/f/meellryd" method="POST" className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-gray-400 text-sm mb-2">Nom</label>
+                    <label className="block text-gray-700 dark:text-gray-400 text-sm mb-2 transition-colors">Nom</label>
                     <input 
                       type="text" name="name" required
-                      className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand transition-colors"
+                      className="w-full bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 rounded-lg px-4 py-2.5 text-gray-900 dark:text-white focus:outline-none focus:border-brand transition-all"
                       placeholder="Votre nom"
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-400 text-sm mb-2">Email</label>
+                    <label className="block text-gray-700 dark:text-gray-400 text-sm mb-2 transition-colors">Email</label>
                     <input 
                       type="email" name="email" required
-                      className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand transition-colors"
+                      className="w-full bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 rounded-lg px-4 py-2.5 text-gray-900 dark:text-white focus:outline-none focus:border-brand transition-all"
                       placeholder="votre@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-gray-400 text-sm mb-2">Objet</label>
+                  <label className="block text-gray-700 dark:text-gray-400 text-sm mb-2 transition-colors">Objet</label>
                   <input 
                     type="text" name="subject" required
-                    className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand transition-colors"
+                    className="w-full bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 rounded-lg px-4 py-2.5 text-gray-900 dark:text-white focus:outline-none focus:border-brand transition-all"
                     placeholder="Sujet de votre message"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-gray-400 text-sm mb-2">Message</label>
+                  <label className="block text-gray-700 dark:text-gray-400 text-sm mb-2 transition-colors">Message</label>
                   <textarea 
                     name="message" rows="4" required
-                    className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand transition-colors resize-none"
+                    className="w-full bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 rounded-lg px-4 py-2.5 text-gray-900 dark:text-white focus:outline-none focus:border-brand transition-all resize-none"
                     placeholder="Comment puis-je vous aider ?"
                   ></textarea>
                 </div>
 
                 <button 
                   type="submit"
-                  className="w-full bg-white text-black font-bold py-3 rounded-lg hover:bg-brand hover:text-white transition-all duration-300"
+                  className="w-full bg-gray-900 dark:bg-white text-white dark:text-black font-bold py-3 rounded-lg hover:bg-brand dark:hover:bg-brand dark:hover:text-white transition-all duration-300"
                 >
                   Envoyer le message
                 </button>

@@ -10,7 +10,8 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen w-full bg-[#111] text-gray-200 font-sans selection:bg-brand selection:text-white overflow-x-hidden">
+    /* On remplace bg-[#111] par bg-gray-50 (clair) et dark:bg-[#111] (sombre) */
+    <div className="min-h-screen w-full bg-gray-50 dark:bg-[#111] text-gray-900 dark:text-gray-200 font-sans selection:bg-brand selection:text-white overflow-x-hidden transition-colors duration-500">
       <Navbar />
       
       <main className="max-w-5xl mx-auto px-6 w-full">
@@ -36,7 +37,7 @@ function App() {
         <Contact />
       </main>
 
-      <footer className="py-12 text-center text-gray-600 text-sm border-t border-white/5">
+      <footer className="py-12 text-center text-gray-500 dark:text-gray-600 text-sm border-t border-gray-200 dark:border-white/5 transition-colors duration-500">
         <p>© 2026 – Portfolio Alexandre Guillemot</p>
       </footer>
     </div>

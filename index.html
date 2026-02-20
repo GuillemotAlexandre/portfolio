@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="fr">
-  <head>
+<html lang="fr" class="dark"> <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +9,29 @@
     
     <script>
       tailwind.config = {
+        darkMode: 'class', // <--- Crucial pour le fonctionnement du bouton
         theme: {
           extend: {
             colors: {
-              brand: '#6c5ce7', // Ton violet personnalisé
+              brand: '#6c5ce7',
             }
           }
         }
       }
     </script>
+
+    <style type="text/css">
+      /* Transition douce lors du changement de thème */
+      html.transition,
+      html.transition *,
+      html.transition *:before,
+      html.transition *:after {
+        transition: all 400ms !important;
+        transition-delay: 0 !important;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-gray-50 dark:bg-[#0f0f0f] text-gray-900 dark:text-white transition-colors duration-500">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

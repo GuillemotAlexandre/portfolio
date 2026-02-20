@@ -3,19 +3,20 @@ import profilePic from '../images/profile.jpg';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 md:py-32 flex flex-col md:flex-row items-center gap-12 border-b border-white/5">
+    <section id="about" className="py-20 md:py-32 flex flex-col md:flex-row items-center gap-12 border-b border-gray-200 dark:border-white/5 transition-colors duration-500">
       {/* Photo avec effet de halo */}
       <div className="relative group">
         <div className="absolute -inset-1 bg-brand rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
         <img 
           src={profilePic} 
           alt="Alexandre Guillemot" 
-          className="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-[#111] shadow-2xl"
+          /* La bordure passe de ton noir sombre au fond gris clair du mode jour */
+          className="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-gray-50 dark:border-[#111] shadow-2xl transition-colors duration-500"
         />
       </div>
       
       <div className="text-center md:text-left">
-        <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">
+        <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight transition-colors duration-500">
           Alexandre Guillemot
         </h2>
         
@@ -24,7 +25,7 @@ const About = () => {
         </div>
 
         {/* Texte issu directement du CV */}
-        <div className="space-y-4 text-gray-400 text-lg leading-relaxed max-w-2xl">
+        <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-2xl transition-colors duration-500">
           <p>
             Étudiant de 20 ans en deuxième année de BUT Métiers du Multimédia et de l'Internet à l'IUT de Blois. 
             Je suis actuellement à la recherche d'un stage en développement web d'une durée de 12 à 15 semaines, 
@@ -34,7 +35,7 @@ const About = () => {
             Passionné par la création d'interfaces attractives et la mise en place de solutions back-end solides. 
           </p>
           <p>
-            mon expérience au Japon a renforcé mon autonomie et ma capacité d'adaptation en milieu professionnel international.
+            Mon expérience au Japon a renforcé mon autonomie et ma capacité d'adaptation en milieu professionnel international.
           </p>
         </div>
 

@@ -5,7 +5,7 @@ import {
   SiAdobephotoshop, SiAdobeillustrator, SiAdobepremierepro, SiTrello
 } from 'react-icons/si';
 import { DiHtml5 } from 'react-icons/di';
-import { RiFileExcel2Fill, RiMindMap } from 'react-icons/ri'; // RiMindMap pour MindView
+import { RiFileExcel2Fill, RiMindMap } from 'react-icons/ri';
 import { TbCube } from 'react-icons/tb'; 
 
 const Formations = () => {
@@ -27,11 +27,13 @@ const Formations = () => {
         { icon: <SiJavascript className="text-yellow-400" />, name: "JS" },
         { icon: <SiReact className="text-blue-400" />, name: "React" },
         { icon: <SiVuedotjs className="text-green-500" />, name: "Vue.js" },
-        { icon: <SiThreedotjs className="text-white" />, name: "Three.js" },
+        /* Changement dynamique pour Three.js (noir en clair, blanc en sombre) */
+        { icon: <SiThreedotjs className="text-gray-900 dark:text-white" />, name: "Three.js" },
         { icon: <TbCube className="text-pink-400" />, name: "A-Frame" },
         { icon: <SiPhp className="text-indigo-400" />, name: "PHP" },
         { icon: <SiLaravel className="text-red-500" />, name: "Laravel" },
-        { icon: <SiSymfony className="text-white" />, name: "Symfony" },
+        /* Changement dynamique pour Symfony */
+        { icon: <SiSymfony className="text-gray-900 dark:text-white" />, name: "Symfony" },
         { icon: <SiTailwindcss className="text-cyan-400" />, name: "Tailwind" },
         { icon: <SiBootstrap className="text-purple-500" />, name: "Bootstrap" },
         { icon: <SiMysql className="text-blue-500" />, name: "SQL" },
@@ -54,30 +56,30 @@ const Formations = () => {
   ];
 
   return (
-    <section id="formations" className="py-20 border-t border-white/5">
+    <section id="formations" className="py-20 border-t border-gray-200 dark:border-white/5 transition-colors duration-500">
       <FadeUp>
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-white mb-2 italic tracking-tight">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 italic tracking-tight">
             Mon Parcours Académique
           </h2>
-          <p className="text-gray-400">Une formation technique et créative axée sur le numérique.</p>
+          <p className="text-gray-600 dark:text-gray-400">Une formation technique et créative axée sur le numérique.</p>
         </div>
       </FadeUp>
 
       <div className="space-y-12">
         {formationData.map((form, index) => (
           <FadeUp key={index} delay={index * 150}>
-            <div className="relative pl-8 border-l-2 border-brand/20 hover:border-brand transition-colors py-2">
+            <div className="relative pl-8 border-l-2 border-brand/20 hover:border-brand transition-all py-2">
               <div className="absolute w-4 h-4 bg-brand rounded-full -left-[9px] top-4 shadow-[0_0_10px_rgba(var(--brand-rgb),0.5)]"></div>
               
               <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8">
                 <div className="flex-1">
                   <span className="text-brand font-mono text-sm font-bold">{form.year}</span>
-                  <h3 className="text-xl font-bold text-white mt-1">{form.degree}</h3>
-                  <p className="text-gray-300 font-medium">{form.institution}</p>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-1 transition-colors">{form.degree}</h3>
+                  <p className="text-gray-700 dark:text-gray-300 font-medium transition-colors">{form.institution}</p>
                   <p className="text-brand/80 text-sm mt-2 font-semibold italic">{form.specialty}</p>
                   
-                  <div className="text-gray-400 mt-4 text-sm leading-relaxed max-w-2xl">
+                  <div className="text-gray-600 dark:text-gray-400 mt-4 text-sm leading-relaxed max-w-2xl transition-colors">
                     <p className="mb-2">{form.details}</p>
                     {form.poles && (
                       <ul className="list-none space-y-1 ml-2">
@@ -92,15 +94,14 @@ const Formations = () => {
                   </div>
                 </div>
 
-                {/* Grille des technos optimisée pour le grand nombre d'icônes */}
                 {form.technos && (
-                  <div className="grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-4 xl:grid-cols-5 gap-3 bg-white/5 p-4 rounded-2xl border border-white/5 h-fit self-start min-w-[220px]">
+                  <div className="grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-4 xl:grid-cols-5 gap-3 bg-white dark:bg-white/5 p-4 rounded-2xl border border-gray-200 dark:border-white/5 h-fit self-start min-w-[220px] shadow-sm dark:shadow-none transition-all">
                     {form.technos.map((tech, i) => (
                       <div key={i} className="group relative flex justify-center">
                         <div className="text-2xl hover:scale-120 transition-transform cursor-help">
                           {tech.icon}
                         </div>
-                        <span className="absolute -top-9 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-gray-800 text-white text-[10px] px-2 py-1 rounded transition-all whitespace-nowrap z-10 border border-white/10">
+                        <span className="absolute -top-9 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-gray-900 dark:bg-gray-800 text-white text-[10px] px-2 py-1 rounded transition-all whitespace-nowrap z-10 border border-white/10">
                           {tech.name}
                         </span>
                       </div>

@@ -42,56 +42,24 @@ const Skills = () => {
   ];
 
   const softSkills = [
-    { 
-      title: "Rigueur & Organisation", 
-      desc: "Gestion structurée des projets via Trello et MindView pour garantir le respect des deadlines.", 
-      icon: "📅" 
-    },
-    { 
-      title: "Adaptabilité", 
-      desc: "Capacité à monter rapidement en compétence sur de nouveaux environnements technologiques.", 
-      icon: "🔄" 
-    },
-    { 
-      title: "Esprit d'équipe", 
-      desc: "Collaborateur actif en mode Agile, favorisant la communication et l'entraide technique.", 
-      icon: "🤝" 
-    },
-    { 
-      title: "Curiosité Technique", 
-      desc: "Veille constante sur l'innovation web et les nouvelles interactions numériques.", 
-      icon: "🧠" 
-    },
-    { 
-      title: "Force de proposition", 
-      desc: "Capacité à suggérer des améliorations créatives et techniques pour optimiser les projets.", 
-      icon: "💡" 
-    },
-    { 
-      title: "Empathie Utilisateur", 
-      desc: "Approche centrée sur l'humain pour concevoir des interfaces intuitives et accessibles.", 
-      icon: "👤" 
-    },
-    { 
-      title: "Résolution de problèmes", 
-      desc: "Approche méthodique et calme face aux défis techniques et aux bugs complexes.", 
-      icon: "🛠️" 
-    },
-    { 
-      title: "Polyvalence", 
-      desc: "Aisance à naviguer entre le design graphique, le développement front et le back-end.", 
-      icon: "🔧" 
-    }
+    { title: "Rigueur & Organisation", desc: "Gestion structurée des projets via Trello et MindView.", icon: "📅" },
+    { title: "Adaptabilité", desc: "Capacité à monter rapidement en compétence sur de nouveaux environnements.", icon: "🔄" },
+    { title: "Esprit d'équipe", desc: "Collaborateur actif en mode Agile, favorisant la communication.", icon: "🤝" },
+    { title: "Curiosité Technique", desc: "Veille constante sur l'innovation web et les nouvelles interactions.", icon: "🧠" },
+    { title: "Force de proposition", desc: "Capacité à suggérer des améliorations créatives et techniques.", icon: "💡" },
+    { title: "Empathie Utilisateur", desc: "Approche centrée sur l'humain pour concevoir des interfaces intuitives.", icon: "👤" },
+    { title: "Résolution de problèmes", desc: "Approche méthodique et calme face aux défis techniques.", icon: "🛠️" },
+    { title: "Polyvalence", desc: "Aisance à naviguer entre le design graphique et le développement.", icon: "🔧" }
   ];
 
   return (
-    <section id="skills" className="py-20 border-t border-white/5">
+    <section id="skills" className="py-20 border-t border-gray-200 dark:border-white/5 transition-colors duration-500">
       <FadeUp>
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-white mb-2 italic tracking-tight">
+        <div className="mb-12 text-center md:text-left">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 italic tracking-tight">
             Compétences Techniques
           </h2>
-          <p className="text-gray-400">Mon arsenal technologique pour le développement web.</p>
+          <p className="text-gray-600 dark:text-gray-400">Mon arsenal technologique pour le développement web.</p>
         </div>
       </FadeUp>
 
@@ -99,7 +67,7 @@ const Skills = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {skillCategories.map((category, index) => (
           <FadeUp key={index} delay={index * 100}>
-            <div className="bg-[#1a1a1a] p-6 rounded-3xl border border-white/5 hover:border-brand/20 transition-all h-full group">
+            <div className="bg-white dark:bg-[#1a1a1a] p-6 rounded-3xl border border-gray-200 dark:border-white/5 hover:border-brand/40 transition-all h-full group shadow-sm dark:shadow-none">
               <h3 className="text-brand font-bold mb-8 flex items-center gap-2">
                 <span className="w-2 h-2 bg-brand rounded-full"></span>
                 {category.title}
@@ -109,15 +77,15 @@ const Skills = () => {
                 {category.skills.map((skill, i) => (
                   <div key={i} className="space-y-2">
                     <div className="flex justify-between items-end">
-                      <span className="text-gray-300 font-medium text-sm">{skill.name}</span>
-                      <span className="text-[10px] text-gray-500 uppercase font-bold tracking-widest italic">
+                      <span className="text-gray-700 dark:text-gray-300 font-medium text-sm">{skill.name}</span>
+                      <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase font-bold tracking-widest italic">
                         {skill.level}
                       </span>
                     </div>
                     
-                    <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                    <div className="h-1.5 w-full bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden">
                       <div 
-                        className="h-full bg-brand rounded-full transition-all duration-1000 ease-out group-hover:bg-brand/80"
+                        className="h-full bg-brand rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${skill.percentage}%` }}
                       ></div>
                     </div>
@@ -129,20 +97,20 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* Section Soft Skills étendue */}
+      {/* Section Soft Skills */}
       <FadeUp delay={400}>
         <div className="mt-20">
-          <h3 className="text-xl font-bold text-white mb-10 text-center italic tracking-wide">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-10 text-center italic tracking-wide">
             Compétences Humaines
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {softSkills.map((skill, i) => (
-              <div key={i} className="p-6 bg-white/5 rounded-2xl border border-white/5 hover:border-brand/30 transition-all text-center group">
+              <div key={i} className="p-6 bg-white dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/5 hover:border-brand/30 transition-all text-center group shadow-sm dark:shadow-none">
                 <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300 inline-block">
                   {skill.icon}
                 </div>
-                <h4 className="text-white font-bold mb-2 text-sm">{skill.title}</h4>
-                <p className="text-gray-400 text-[11px] leading-relaxed">
+                <h4 className="text-gray-900 dark:text-white font-bold mb-2 text-sm">{skill.title}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-[11px] leading-relaxed">
                   {skill.desc}
                 </p>
               </div>

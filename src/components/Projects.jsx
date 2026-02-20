@@ -42,28 +42,34 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 border-t border-white/5">
-      <h2 className="text-3xl font-bold text-white mb-10 italic">Mes Réalisations</h2>
+    <section id="projects" className="py-20 border-t border-gray-200 dark:border-white/5 transition-colors duration-500">
+      <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-10 italic transition-colors">
+        Mes Réalisations
+      </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projectsData.map((project, index) => (
           <div key={index} onClick={() => setSelectedProject(project)} className="cursor-pointer">
             <ProjectCard delay={index * 200}>
-              <article className="group bg-[#1a1a1a] p-8 rounded-3xl border border-white/5 hover:border-brand/40 transition-all duration-500 h-full flex flex-col">
+              <article className="group bg-white dark:bg-[#1a1a1a] p-8 rounded-3xl border border-gray-200 dark:border-white/5 hover:border-brand/40 transition-all duration-500 h-full flex flex-col shadow-sm dark:shadow-none">
                 <span className="text-brand text-[10px] uppercase font-bold tracking-widest">{project.category}</span>
-                <h3 className="text-xl font-bold text-white mt-2 mb-3 group-hover:text-brand transition-colors">{project.title}</h3>
-                <p className="text-gray-400 italic mb-6 flex-grow">{project.desc}</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-2 mb-3 group-hover:text-brand transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 italic mb-6 flex-grow transition-colors">
+                  {project.desc}
+                </p>
                 
-                {/* Affichage des Badges Soft Skills pour la valorisation */}
+                {/* Badges Soft Skills */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.softSkills?.map((skill, i) => (
-                    <span key={i} className="text-[10px] font-bold uppercase tracking-wider bg-brand/10 text-brand/80 px-2 py-1 rounded border border-brand/20">
+                    <span key={i} className="text-[10px] font-bold uppercase tracking-wider bg-brand/5 dark:bg-brand/10 text-brand/80 px-2 py-1 rounded border border-brand/10 dark:border-brand/20">
                       {skill}
                     </span>
                   ))}
                 </div>
 
-                <button className="text-sm font-bold text-white/50 group-hover:text-white transition-colors text-left">
+                <button className="text-sm font-bold text-gray-400 dark:text-white/50 group-hover:text-brand dark:group-hover:text-white transition-colors text-left">
                   Détails du projet +
                 </button>
               </article>
