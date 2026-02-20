@@ -41,6 +41,49 @@ const Skills = () => {
     }
   ];
 
+  const softSkills = [
+    { 
+      title: "Rigueur & Organisation", 
+      desc: "Gestion structurée des projets via Trello et MindView pour garantir le respect des deadlines.", 
+      icon: "📅" 
+    },
+    { 
+      title: "Adaptabilité", 
+      desc: "Capacité à monter rapidement en compétence sur de nouveaux environnements technologiques.", 
+      icon: "🔄" 
+    },
+    { 
+      title: "Esprit d'équipe", 
+      desc: "Collaborateur actif en mode Agile, favorisant la communication et l'entraide technique.", 
+      icon: "🤝" 
+    },
+    { 
+      title: "Curiosité Technique", 
+      desc: "Veille constante sur l'innovation web et les nouvelles interactions numériques.", 
+      icon: "🧠" 
+    },
+    { 
+      title: "Force de proposition", 
+      desc: "Capacité à suggérer des améliorations créatives et techniques pour optimiser les projets.", 
+      icon: "💡" 
+    },
+    { 
+      title: "Empathie Utilisateur", 
+      desc: "Approche centrée sur l'humain pour concevoir des interfaces intuitives et accessibles.", 
+      icon: "👤" 
+    },
+    { 
+      title: "Résolution de problèmes", 
+      desc: "Approche méthodique et calme face aux défis techniques et aux bugs complexes.", 
+      icon: "🛠️" 
+    },
+    { 
+      title: "Polyvalence", 
+      desc: "Aisance à naviguer entre le design graphique, le développement front et le back-end.", 
+      icon: "🔧" 
+    }
+  ];
+
   return (
     <section id="skills" className="py-20 border-t border-white/5">
       <FadeUp>
@@ -48,10 +91,11 @@ const Skills = () => {
           <h2 className="text-3xl font-bold text-white mb-2 italic tracking-tight">
             Compétences Techniques
           </h2>
-          <p className="text-gray-400">Mon niveau de maîtrise sur les technologies clés.</p>
+          <p className="text-gray-400">Mon arsenal technologique pour le développement web.</p>
         </div>
       </FadeUp>
 
+      {/* Grille des compétences techniques */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {skillCategories.map((category, index) => (
           <FadeUp key={index} delay={index * 100}>
@@ -84,6 +128,28 @@ const Skills = () => {
           </FadeUp>
         ))}
       </div>
+
+      {/* Section Soft Skills étendue */}
+      <FadeUp delay={400}>
+        <div className="mt-20">
+          <h3 className="text-xl font-bold text-white mb-10 text-center italic tracking-wide">
+            Compétences Humaines
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {softSkills.map((skill, i) => (
+              <div key={i} className="p-6 bg-white/5 rounded-2xl border border-white/5 hover:border-brand/30 transition-all text-center group">
+                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300 inline-block">
+                  {skill.icon}
+                </div>
+                <h4 className="text-white font-bold mb-2 text-sm">{skill.title}</h4>
+                <p className="text-gray-400 text-[11px] leading-relaxed">
+                  {skill.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </FadeUp>
     </section>
   );
 };

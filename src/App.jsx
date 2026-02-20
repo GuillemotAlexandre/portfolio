@@ -1,10 +1,10 @@
 // src/App.jsx
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Projects from './components/Projects';
 import Formations from './components/Formations';
 import Skills from './components/Skills';
 import Services from './components/Services';
-import Projects from './components/Projects';
 import Hobbies from './components/Hobbies';
 import Contact from './components/Contact';
 
@@ -17,6 +17,9 @@ function App() {
         {/* Présentation principale avec bouton CV et photo */}
         <About />
 
+        {/* Tes réalisations (Japon, Riders of Berk, etc.) */}
+        <Projects />
+
         {/* Parcours académique (BUT MMI, Bac STI2D) */}
         <Formations />
 
@@ -25,9 +28,6 @@ function App() {
 
         {/* Ce que tu peux apporter à l'entreprise (Services) */}
         <Services />
-        
-        {/* Tes réalisations (Japon, Riders of Berk, etc.) */}
-        <Projects />
 
         {/* Ta personnalité (Volley-ball, Culture Japonaise) */}
         <Hobbies />
