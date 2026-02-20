@@ -1,9 +1,9 @@
-import { useTranslation } from 'react-i18next'; // Importation
+import { useTranslation } from 'react-i18next';
 import TypingEffect from '../Animations/TypingEffect';
 import profilePic from '../images/profile.jpg'; 
 
 const About = () => {
-  const { t } = useTranslation(); // Initialisation
+  const { t, i18n } = useTranslation(); // On récupère i18n pour surveiller la langue
 
   return (
     <section id="about" className="py-20 md:py-32 flex flex-col md:flex-row items-center gap-12 border-b border-gray-200 dark:border-white/5 transition-colors duration-500">
@@ -22,8 +22,16 @@ const About = () => {
         </h2>
         
         <div className="text-xl md:text-2xl mb-6 min-h-[1.5em] text-brand font-medium">
-          {/* Note: Pour TypingEffect, on passe la traduction directe */}
-          <TypingEffect text={t('about.job')} speed={100} />
+          {/* On utilise i18n.language comme clé : 
+            Dès que la langue change, le composant est réinitialisé proprement.
+          */}
+          <TypingEffect 
+            key={i18n.language} 
+            text={t('about.job')} 
+            speed={100} 
+            eraseSpeed={50} 
+            pause={2000} 
+          />
         </div>
 
         <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-2xl transition-colors duration-500">
